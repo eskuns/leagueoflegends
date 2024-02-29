@@ -1,0 +1,125 @@
+*
+{
+    box-sizing:         border-box;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  background-image: url(../image/takeover.jpg);
+  background-size: cover;
+}
+
+
+
+.user-card
+{
+	width: 350px;
+	height: 350px;
+	margin: 50px auto;
+  position: relative;
+	background: rgba(255,255,255,0.2);
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+input
+{
+	width: 100%;
+	height: 40px;
+	border-radius:         3px;
+	-moz-border-radius:    3px;
+	-webkit-border-radius: 3px;
+	border: 1px solid #ed697e;
+	padding: 3px 12px;
+	margin: 6px 0;
+}
+
+input:focus
+{
+	outline: none;
+	border: 5px solid #ed697e;
+	transition:         all .1s ease-in-out;
+	-o-transition:      all .1s ease-in-out;
+	-moz-transition:    all .1s ease-in-out;
+	-webkit-transition: all .1s ease-in-out;
+}
+
+.box-log,
+.box-sign
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: calc(100% - 25px);
+  border-radius:         5px;
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;
+}
+
+.box-log{
+	padding: 20px 40px;
+	right: 0px;
+}
+
+.box-sign{
+	padding: 40px;
+	right: -350px;
+}
+
+.login, .signup
+{
+	text-align: center;
+	color: #fff;
+	background: #ed697e;
+	line-height: 30px;
+	opacity: 0.95;
+  cursor: pointer
+}
+
+.login:hover{opacity: 1}
+
+
+
+/**** footer *****/
+
+.user-card .footer
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 13px;
+	font-family: sans-serif;
+}
+
+.footer a
+{
+	color: #ed697e;
+}
+
+@keyframes heart{
+  0%{
+    transform:         scale(1, 1);
+    -ms-transform:     scale(1, 1);
+    -webkit-transform: scale(1, 1);
+  }
+  50%{
+    transform:         scale(1.5, 1.5);
+    -ms-transform:     scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+  }
+  100%{
+    transform:         scale(1, 1);
+    -ms-transform:     scale(1, 1);
+    -webkit-transform: scale(1, 1);
+  }
+}
