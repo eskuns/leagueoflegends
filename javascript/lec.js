@@ -17,11 +17,11 @@ async function fetchAndDisplayTeamInfo() {
         }
 
         // Sélectionner l'élément HTML où vous souhaitez afficher le tableau
-        const tableContainer = document.getElementById('tableContainer');
+        const tableContainer = document.getElementById('leaderboard');
 
         // Créer un tableau HTML
         const table = document.createElement('table');
-        table.classList.add('team-table');
+        table.classList.add('table');
 
 
 
@@ -35,7 +35,7 @@ async function fetchAndDisplayTeamInfo() {
 
                 // Créer une nouvelle ligne pour l'équipe
                 const row = table.insertRow();
-                row.innerHTML = `<td>${leaderboardPosition}</td><td>${nomTeam}</td><td>${logoURL}</td>`;
+                row.innerHTML = `<tr><td class="number">1</td><td class="name">Lee Taeyong</td></tr>`;
             });
 
             // Ajouter le tableau au conteneur HTML
