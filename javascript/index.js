@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
             console.log(data);
     
-            const isValidCredentials = data.some((user => user.pseudo === usernameLogin || user.email === usernameLogin) && user.mdp === hashedPassword);
+            const isValidCredentials = data.some(user => (user.pseudo === usernameLogin || user.email === usernameLogin) && user.mdp === hashedPassword);
     
             if (isValidCredentials) {
                 window.location.href = "./html/accueil.html";
