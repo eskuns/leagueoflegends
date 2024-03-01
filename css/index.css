@@ -12,8 +12,8 @@ body
   font-family: arial, sans-serif;
   background-image: url(../image/takeover.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
-
 
 
 .user-card
