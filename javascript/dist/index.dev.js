@@ -77,8 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
             error = _ref2.error;
             console.log(data);
             isValidCredentials = data.some(function (user) {
-              return user.pseudo === usernameLogin || user.email === usernameLogin && user.mdp === hashedPassword;
-            });
+              return user.pseudo === usernameLogin || user.email === usernameLogin;
+            } && user.mdp === hashedPassword);
 
             if (isValidCredentials) {
               window.location.href = "./html/accueil.html";
