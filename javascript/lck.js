@@ -10,7 +10,7 @@ async function fetchAndDisplayTeamInfo() {
         const { data: teams, error } = await supabase
             .from('equipe')
             .select('*')
-            .eq('id_ligue', '1');
+            .eq('id_ligue', '2');
 
         if (error) {
             console.error('Erreur lors de l\'exécution de la requête SQL :', error.message);

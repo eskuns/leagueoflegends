@@ -15,7 +15,7 @@ function fetchAndDisplayTeamInfo() {
         case 0:
           _context.prev = 0;
           _context.next = 3;
-          return regeneratorRuntime.awrap(supabase.from('equipe').select('*').eq('id_ligue', '1'));
+          return regeneratorRuntime.awrap(supabase.from('equipe').select('*').eq('id_ligue', '2'));
 
         case 3:
           _ref = _context.sent;

@@ -45,16 +45,17 @@ document.addEventListener("DOMContentLoaded", function () {
     
             const usernameLogin = document.getElementById("username-login").value;
             const passwordLogin= document.getElementById("password-login").value;
+            
     
             const hashedPassword = CryptoJS.SHA256(passwordLogin).toString(CryptoJS.enc.Hex);
     
             const { data, error } = await supabase
                 .from('compte')
-                .select('pseudo,mdp');
+                .select('pseudo,mdp,email');
     
             console.log(data);
     
-            const isValidCredentials = data.some(user => user.pseudo === usernameLogin && user.mdp === hashedPassword);
+            const isValidCredentials = data.some(user => user.pseudo === usernameLogin || user.email === usernameLogin && user.mdp === hashedPassword);
     
             if (isValidCredentials) {
                 window.location.href = "./html/accueil.html";
