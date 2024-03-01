@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
             _ref2 = _context2.sent;
             data = _ref2.data;
             error = _ref2.error;
-            console.log(data);
             isValidCredentials = data.some(function (user) {
               return (user.pseudo === usernameLogin || user.email === usernameLogin) && user.mdp === hashedPassword;
             });
@@ -86,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
               console.error("Invalid credentials");
             }
 
-          case 12:
+          case 11:
           case "end":
             return _context2.stop();
         }

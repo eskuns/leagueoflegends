@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 .from('compte')
                 .select('pseudo,mdp,email');
     
-            console.log(data);
     
             const isValidCredentials = data.some(user => (user.pseudo === usernameLogin || user.email === usernameLogin) && user.mdp === hashedPassword);
     
